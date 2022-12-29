@@ -7,13 +7,26 @@
     src: url("../../src/fonts/zilla/ZillaSlab-Light.ttf");
   }
 
+/**
+hard yellow:
+  	#fbb811
+yellow:
+	#f5d149  
+soft yellow: 
+	#faec92
+white: 
+	#d8dade
+green:
+  	#2d7e3e
+*/
+
 /* HEADER */
 .logo{
     @apply 
 
-    max-h-44
+    max-h-24
     m-auto
-    mb-8
+	p-1
     
     hover:animate-pulse
 }
@@ -23,33 +36,13 @@
 
     p-5 
     justify-between
+	h-24
     
     lg:flex 
+	bg-[#f5d149]
+	text-[#2d7e3e]
 
-}
-
-.contact{
-    @apply 
-
-    bg-[#FBB811] 
-    text-white 
-    duration-500 
-    px-6 py-2 
-    mx-16 
-    rounded 
-    text-center
-    font-zilla
-    text-lg
-    
-
-    hover:bg-[#D8DADE]
-}
-
-.sections{
-    @apply 
-    
-    static 
-    bg-white 
+	static 
     w-auto 
     grid-cols-1
     font-zilla
@@ -57,14 +50,15 @@
 
     lg:items-center 
     lg:flex 
+
 }
 
 .link{
     @apply 
     
-    mx-16 
+    mx-2 
     text-xl 
-    hover:text-[#FBB811] 
+    hover:text-white
     duration-500 
     pb-5 
     text-center
